@@ -1,0 +1,189 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #355553;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.Container
+{
+    display: flex;
+    gap: 5px;
+    align-items: flex-start;
+}
+
+.Player 
+{
+    width: 210px;
+    height: 480px;
+    background: #4a6a54;
+    padding: 30px;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#title,#artist
+{
+    font-size: 16px;
+    padding: 5px;
+    margin: 3px;
+    max-width: 210px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #222;
+}
+
+.details
+{
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+.details input[type=range]
+{
+    width: 210px;
+    accent-color: #aaffaa;
+}
+
+#song_Cover
+{
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+}
+
+#timeDisplay
+{
+    width: 210px;
+    margin-top: 2px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.controls
+{
+    width: 210px;
+    display: flex;
+    justify-content: center;
+}
+.controls button
+{
+    width: 60px;
+    height: 40px;
+    color:#222;
+    background: #aaffaa;
+    font-size: 30px;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.2s;
+}
+.controls button:hover
+{
+    background-color: #99ff99;
+    transform: scale(1.05);
+}
+
+.volume_control
+{
+    width: 210px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+.volume_control input[type=range]
+{
+    width: 180px;
+    accent-color: #aaffaa;
+}
+
+input[type=range]:active
+{
+    accent-color: #99ff99;
+}
+
+#volume_icon
+{
+    background: #aaffaa;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+#volume_icon:hover
+{
+    background-color: #99ffaa;
+    transform: scale(1.05);
+}
+
+#playlistToggle
+{
+    width: 210px;
+    height: 40px;
+    color:#222;
+    background-color: #aaffaa;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 3px solid #99ff99;
+}
+#playlistToggle:hover{
+    background-color: #99ff99;
+    transform: scale(1.05);
+}
+
+.playlist
+{
+    width: 210px;
+    height: 480px;
+    border-radius: 15px;
+    display: none;
+    flex-direction: column;
+    background: #4a6a54;
+    padding: 30px;
+    overflow-y: auto;
+}
+.playlist input[type=text]
+{
+    width: 206px;
+    color: #222;
+    background-color: #aaffaa;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.songItem
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 40px;
+    color: #222;
+    background-color: #aaffaa;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    padding: 0px;
+    cursor: pointer;
+}
+.songItem:hover 
+{
+    background: #99ff99;
+    transform: scale(1.05);
+}
