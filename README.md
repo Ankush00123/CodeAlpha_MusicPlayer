@@ -17,15 +17,5 @@ This project includes basic audio playback controls, a playlist view, search fun
 - Dynamic cover image loading
 
 ---
-
-## Project Structure
-.
-├── index.html
-├── style.css
-├── script.js
-├── Songs/
-├── Images/
-└── README.md
----
 ## How to Run
 Clone or download the repository and open `index.html` in a web browser.
